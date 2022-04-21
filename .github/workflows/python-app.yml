@@ -29,6 +29,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     - name: Fetch data from storage 
       run: |
+        dvc remote add -d s3cache s3://udacity-project-storage/cache
         dvc pull
     - name: Set up Python 3.8
       uses: actions/setup-python@v3
