@@ -3,7 +3,7 @@ import json
 import requests
 from fastapi.testclient import TestClient
 
-from main import app
+from ..api.main import app
 
 client = TestClient(app)
 
