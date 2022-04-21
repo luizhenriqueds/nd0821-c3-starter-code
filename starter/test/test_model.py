@@ -11,20 +11,9 @@ def test_data_size(data):
     assert data.shape[0] > 30000
 
 
-def test_data_types(data):
+def test_data_types(data, categorical_features):
     """Asserting all categorical columns are present"""
-    cat_features = [
-        "workclass",
-        "education",
-        "marital-status",
-        "occupation",
-        "relationship",
-        "race",
-        "sex",
-        "native-country"
-    ]
-
-    assert set(data.columns).issuperset(cat_features)
+    assert set(data.columns).issuperset(categorical_features)
 
 
 def test_data_values(data):
