@@ -16,8 +16,9 @@ data = pd.read_csv("../data/clean_census_data.csv")
 # Optional enhancement, use K-fold cross validation instead of a train-test split.
 train, test = train_test_split(data, test_size=0.20)
 
-# Sample input data
-test[:1].to_csv("../data/sample_input.csv", index=False)
+# Sample test data used for testing and
+# reproducibility purpose
+test.to_csv("../data/sample_test.csv", index=False)
 
 cat_features = [
     "workclass",

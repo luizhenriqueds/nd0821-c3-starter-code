@@ -13,7 +13,6 @@ def test_data_size(data):
 
 def test_data_types(data):
     """Asserting all categorical columns are present"""
-
     cat_features = [
         "workclass",
         "education",
@@ -29,6 +28,7 @@ def test_data_types(data):
 
 
 def test_data_values(data):
+    """Assert a certain column contains all possible values"""
     known_education_values = [
         'State-gov',
         'Self-emp-not-inc',
@@ -49,6 +49,7 @@ def test_data_age(data):
 
 
 def test_model_inference(test_data, model, encoder, categorical_features):
+    """Assert model can output predictions and classes are correct"""
     test = test_data.drop(['salary'], axis=1)
 
     X_categorical = encoder.transform(
@@ -72,8 +73,10 @@ def test_model_inference(test_data, model, encoder, categorical_features):
     assert np.isin(preds, [0, 1]).all()
 
 
-def test_input(sample_input, model, encoder, categorical_features):
-    test = sample_input.drop(['salary'], axis=1)
+def test_input(test_data, model, encoder, categorical_features):
+    """Assert prediction from given input is from right class"""
+    # Test only first instance, known to be from class 0
+    test = test_data.drop(['salary'], axis=1)[:1]
 
     X_categorical = encoder.transform(
         test[categorical_features]
