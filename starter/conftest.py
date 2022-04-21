@@ -32,13 +32,6 @@ def test_data():
 
 
 @pytest.fixture(scope="session")
-def sample_input():
-    """Function to load sample input data."""
-    sample_data = pd.read_csv("data/sample_input.csv")
-    return sample_data
-
-
-@pytest.fixture(scope="session")
 def categorical_features():
     return [
         "workclass",
