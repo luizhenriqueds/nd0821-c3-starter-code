@@ -29,7 +29,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
     - name: Fetch data from storage 
       run: |
-        dvc remote add -d s3cache s3://udacity-project-storage/cache
+        dvc remote add -d ${{ secrets.REMOTE_NAME }} ${{ secrets.REMOTE_URL }}
         dvc pull
     - name: Set up Python 3.8
       uses: actions/setup-python@v3
@@ -48,5 +48,6 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
+      working-directory: ./starter
       run: |
         pytest
