@@ -16,6 +16,9 @@ data = pd.read_csv("../data/clean_census_data.csv")
 # Optional enhancement, use K-fold cross validation instead of a train-test split.
 train, test = train_test_split(data, test_size=0.20)
 
+# Sample input data
+test[:1].to_csv("../data/sample_input.csv", index=False)
+
 cat_features = [
     "workclass",
     "education",
@@ -24,7 +27,7 @@ cat_features = [
     "relationship",
     "race",
     "sex",
-    "native-country",
+    "native-country"
 ]
 X_train, y_train, encoder, lb = process_data(
     train, categorical_features=cat_features, label="salary", training=True
@@ -41,6 +44,7 @@ X_test, y_test, encoder_test, lb_test = process_data(
 )
 
 joblib.dump(encoder, "../model/encoder.pkl")
+joblib.dump(lb, "../model/binarizer.pkl")
 
 # Training model
 clf = model.train_model(X_train, y_train)
