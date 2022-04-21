@@ -35,7 +35,7 @@ class Payload(BaseModel):
     native_country: str = Field(alias="native-country", example="United-States")
 
 
-def _load_artifact():
+def _load_artifacts():
     PATH_TO_MODELS_DIR = Path('../')
     clf = joblib.load(PATH_TO_MODELS_DIR / 'model/rfc_model.pkl')
     encoder = joblib.load(PATH_TO_MODELS_DIR / 'model/encoder.pkl')
@@ -45,7 +45,7 @@ def _load_artifact():
 
 @app.post("/predict", response_model=Payload)
 async def inference(payload: Payload):
-    clf, encoder = _load_artifact()
+    clf, encoder = _load_artifacts()
 
     categorical_features = [
         "workclass",
