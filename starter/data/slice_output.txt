@@ -1,74 +1,65 @@
 [
     {
         "feature": "workclass",
+        "value": "Self-emp-not-inc",
+        "metrics": {
+            "precision": 0.72816,
+            "recall": 0.52817,
+            "fbeta": 0.61224
+        }
+    },
+    {
+        "feature": "workclass",
         "value": "Private",
         "metrics": {
-            "precision": 0.80574,
-            "recall": 0.50211,
-            "fbeta": 0.61868
+            "precision": 0.71921,
+            "recall": 0.60581,
+            "fbeta": 0.65766
         }
     },
     {
         "feature": "workclass",
         "value": "Local-gov",
         "metrics": {
-            "precision": 0.83333,
-            "recall": 0.60345,
-            "fbeta": 0.7
-        }
-    },
-    {
-        "feature": "workclass",
-        "value": "State-gov",
-        "metrics": {
-            "precision": 0.77778,
-            "recall": 0.625,
-            "fbeta": 0.69307
-        }
-    },
-    {
-        "feature": "workclass",
-        "value": "Self-emp-inc",
-        "metrics": {
-            "precision": 0.75532,
-            "recall": 0.71,
-            "fbeta": 0.73196
-        }
-    },
-    {
-        "feature": "workclass",
-        "value": "Self-emp-not-inc",
-        "metrics": {
-            "precision": 0.72222,
-            "recall": 0.54545,
-            "fbeta": 0.62151
+            "precision": 0.70476,
+            "recall": 0.5873,
+            "fbeta": 0.64069
         }
     },
     {
         "feature": "workclass",
         "value": "Federal-gov",
         "metrics": {
-            "precision": 0.83333,
-            "recall": 0.45977,
-            "fbeta": 0.59259
+            "precision": 0.66176,
+            "recall": 0.70312,
+            "fbeta": 0.68182
         }
     },
     {
         "feature": "workclass",
         "value": "?",
         "metrics": {
-            "precision": 0.51852,
-            "recall": 0.35,
-            "fbeta": 0.41791
+            "precision": 0.80952,
+            "recall": 0.47222,
+            "fbeta": 0.59649
         }
     },
     {
         "feature": "workclass",
-        "value": "Without-pay",
+        "value": "State-gov",
         "metrics": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "fbeta": 1.0
+            "precision": 0.80303,
+            "recall": 0.70667,
+            "fbeta": 0.75177
+        }
+    },
+    {
+        "feature": "workclass",
+        "value": "Self-emp-inc",
+        "metrics": {
+            "precision": 0.78723,
+            "recall": 0.81618,
+            "fbeta": 0.80144
         }
     },
     {
@@ -81,89 +72,8 @@
         }
     },
     {
-        "feature": "education",
-        "value": "Some-college",
-        "metrics": {
-            "precision": 0.92308,
-            "recall": 0.21661,
-            "fbeta": 0.35088
-        }
-    },
-    {
-        "feature": "education",
-        "value": "Bachelors",
-        "metrics": {
-            "precision": 0.72399,
-            "recall": 0.84615,
-            "fbeta": 0.78032
-        }
-    },
-    {
-        "feature": "education",
-        "value": "11th",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 0.58333,
-            "fbeta": 0.73684
-        }
-    },
-    {
-        "feature": "education",
-        "value": "Masters",
-        "metrics": {
-            "precision": 0.7451,
-            "recall": 0.89412,
-            "fbeta": 0.81283
-        }
-    },
-    {
-        "feature": "education",
-        "value": "Assoc-voc",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 0.27143,
-            "fbeta": 0.42697
-        }
-    },
-    {
-        "feature": "education",
-        "value": "HS-grad",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 0.19937,
-            "fbeta": 0.33245
-        }
-    },
-    {
-        "feature": "education",
-        "value": "12th",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 0.0,
-            "fbeta": 0.0
-        }
-    },
-    {
-        "feature": "education",
-        "value": "9th",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 0.125,
-            "fbeta": 0.22222
-        }
-    },
-    {
-        "feature": "education",
-        "value": "10th",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 0.0625,
-            "fbeta": 0.11765
-        }
-    },
-    {
-        "feature": "education",
-        "value": "5th-6th",
+        "feature": "workclass",
+        "value": "Without-pay",
         "metrics": {
             "precision": 1.0,
             "recall": 1.0,
@@ -172,25 +82,115 @@
     },
     {
         "feature": "education",
-        "value": "Prof-school",
+        "value": "HS-grad",
         "metrics": {
-            "precision": 0.85542,
-            "recall": 0.85542,
-            "fbeta": 0.85542
+            "precision": 0.6,
+            "recall": 0.40367,
+            "fbeta": 0.48263
+        }
+    },
+    {
+        "feature": "education",
+        "value": "Assoc-voc",
+        "metrics": {
+            "precision": 0.63636,
+            "recall": 0.36364,
+            "fbeta": 0.46281
+        }
+    },
+    {
+        "feature": "education",
+        "value": "Some-college",
+        "metrics": {
+            "precision": 0.68692,
+            "recall": 0.51579,
+            "fbeta": 0.58918
         }
     },
     {
         "feature": "education",
         "value": "Assoc-acdm",
         "metrics": {
-            "precision": 0.94737,
-            "recall": 0.26471,
-            "fbeta": 0.41379
+            "precision": 0.63043,
+            "recall": 0.51786,
+            "fbeta": 0.56863
+        }
+    },
+    {
+        "feature": "education",
+        "value": "Bachelors",
+        "metrics": {
+            "precision": 0.76298,
+            "recall": 0.75446,
+            "fbeta": 0.7587
+        }
+    },
+    {
+        "feature": "education",
+        "value": "Prof-school",
+        "metrics": {
+            "precision": 0.85227,
+            "recall": 0.92593,
+            "fbeta": 0.88757
+        }
+    },
+    {
+        "feature": "education",
+        "value": "7th-8th",
+        "metrics": {
+            "precision": 0.66667,
+            "recall": 0.4,
+            "fbeta": 0.5
+        }
+    },
+    {
+        "feature": "education",
+        "value": "9th",
+        "metrics": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "fbeta": 0.0
+        }
+    },
+    {
+        "feature": "education",
+        "value": "10th",
+        "metrics": {
+            "precision": 1.0,
+            "recall": 0.375,
+            "fbeta": 0.54545
+        }
+    },
+    {
+        "feature": "education",
+        "value": "Masters",
+        "metrics": {
+            "precision": 0.81356,
+            "recall": 0.82759,
+            "fbeta": 0.82051
         }
     },
     {
         "feature": "education",
         "value": "1st-4th",
+        "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "fbeta": 1.0
+        }
+    },
+    {
+        "feature": "education",
+        "value": "Doctorate",
+        "metrics": {
+            "precision": 0.81944,
+            "recall": 0.93651,
+            "fbeta": 0.87407
+        }
+    },
+    {
+        "feature": "education",
+        "value": "5th-6th",
         "metrics": {
             "precision": 1.0,
             "recall": 0.0,
@@ -199,20 +199,20 @@
     },
     {
         "feature": "education",
-        "value": "7th-8th",
+        "value": "12th",
         "metrics": {
-            "precision": 0.66667,
-            "recall": 0.25,
-            "fbeta": 0.36364
+            "precision": 0.0,
+            "recall": 0.0,
+            "fbeta": 0.0
         }
     },
     {
         "feature": "education",
-        "value": "Doctorate",
+        "value": "11th",
         "metrics": {
-            "precision": 0.80645,
-            "recall": 0.90909,
-            "fbeta": 0.8547
+            "precision": 0.33333,
+            "recall": 0.14286,
+            "fbeta": 0.2
         }
     },
     {
@@ -226,47 +226,38 @@
     },
     {
         "feature": "marital-status",
+        "value": "Married-civ-spouse",
+        "metrics": {
+            "precision": 0.72608,
+            "recall": 0.66717,
+            "fbeta": 0.69538
+        }
+    },
+    {
+        "feature": "marital-status",
         "value": "Never-married",
         "metrics": {
-            "precision": 1.0,
-            "recall": 0.24359,
-            "fbeta": 0.39175
+            "precision": 0.77551,
+            "recall": 0.43678,
+            "fbeta": 0.55882
         }
     },
     {
         "feature": "marital-status",
         "value": "Divorced",
         "metrics": {
-            "precision": 1.0,
-            "recall": 0.27473,
-            "fbeta": 0.43103
-        }
-    },
-    {
-        "feature": "marital-status",
-        "value": "Married-civ-spouse",
-        "metrics": {
-            "precision": 0.77495,
-            "recall": 0.56721,
-            "fbeta": 0.655
+            "precision": 0.72727,
+            "recall": 0.26374,
+            "fbeta": 0.3871
         }
     },
     {
         "feature": "marital-status",
         "value": "Widowed",
         "metrics": {
-            "precision": 1.0,
-            "recall": 0.27778,
-            "fbeta": 0.43478
-        }
-    },
-    {
-        "feature": "marital-status",
-        "value": "Separated",
-        "metrics": {
-            "precision": 0.75,
-            "recall": 0.3,
-            "fbeta": 0.42857
+            "precision": 0.66667,
+            "recall": 0.26667,
+            "fbeta": 0.38095
         }
     },
     {
@@ -274,8 +265,17 @@
         "value": "Married-spouse-absent",
         "metrics": {
             "precision": 1.0,
-            "recall": 0.4,
-            "fbeta": 0.57143
+            "recall": 0.57143,
+            "fbeta": 0.72727
+        }
+    },
+    {
+        "feature": "marital-status",
+        "value": "Separated",
+        "metrics": {
+            "precision": 1.0,
+            "recall": 0.1,
+            "fbeta": 0.18182
         }
     },
     {
@@ -283,125 +283,125 @@
         "value": "Married-AF-spouse",
         "metrics": {
             "precision": 1.0,
-            "recall": 0.33333,
-            "fbeta": 0.5
+            "recall": 0.0,
+            "fbeta": 0.0
         }
     },
     {
         "feature": "occupation",
         "value": "Exec-managerial",
         "metrics": {
-            "precision": 0.85813,
-            "recall": 0.66133,
-            "fbeta": 0.74699
-        }
-    },
-    {
-        "feature": "occupation",
-        "value": "Adm-clerical",
-        "metrics": {
-            "precision": 0.8,
-            "recall": 0.36735,
-            "fbeta": 0.5035
-        }
-    },
-    {
-        "feature": "occupation",
-        "value": "Prof-specialty",
-        "metrics": {
-            "precision": 0.78161,
-            "recall": 0.78613,
-            "fbeta": 0.78386
-        }
-    },
-    {
-        "feature": "occupation",
-        "value": "Sales",
-        "metrics": {
-            "precision": 0.77236,
-            "recall": 0.54913,
-            "fbeta": 0.64189
-        }
-    },
-    {
-        "feature": "occupation",
-        "value": "Transport-moving",
-        "metrics": {
-            "precision": 0.70588,
-            "recall": 0.21429,
-            "fbeta": 0.32877
+            "precision": 0.77534,
+            "recall": 0.75066,
+            "fbeta": 0.7628
         }
     },
     {
         "feature": "occupation",
         "value": "Craft-repair",
         "metrics": {
-            "precision": 0.76471,
-            "recall": 0.26,
-            "fbeta": 0.38806
+            "precision": 0.67424,
+            "recall": 0.42995,
+            "fbeta": 0.52507
         }
     },
     {
         "feature": "occupation",
         "value": "Other-service",
         "metrics": {
-            "precision": 1.0,
-            "recall": 0.125,
-            "fbeta": 0.22222
-        }
-    },
-    {
-        "feature": "occupation",
-        "value": "Machine-op-inspct",
-        "metrics": {
-            "precision": 0.8,
-            "recall": 0.21429,
-            "fbeta": 0.33803
-        }
-    },
-    {
-        "feature": "occupation",
-        "value": "Farming-fishing",
-        "metrics": {
-            "precision": 0.5625,
-            "recall": 0.5,
-            "fbeta": 0.52941
-        }
-    },
-    {
-        "feature": "occupation",
-        "value": "?",
-        "metrics": {
-            "precision": 0.51852,
-            "recall": 0.35,
-            "fbeta": 0.41791
-        }
-    },
-    {
-        "feature": "occupation",
-        "value": "Protective-serv",
-        "metrics": {
-            "precision": 0.76923,
+            "precision": 0.71429,
             "recall": 0.25,
-            "fbeta": 0.37736
+            "fbeta": 0.37037
         }
     },
     {
         "feature": "occupation",
         "value": "Tech-support",
         "metrics": {
-            "precision": 0.66667,
-            "recall": 0.35294,
-            "fbeta": 0.46154
+            "precision": 0.77778,
+            "recall": 0.50909,
+            "fbeta": 0.61538
+        }
+    },
+    {
+        "feature": "occupation",
+        "value": "Sales",
+        "metrics": {
+            "precision": 0.76744,
+            "recall": 0.62857,
+            "fbeta": 0.6911
+        }
+    },
+    {
+        "feature": "occupation",
+        "value": "Prof-specialty",
+        "metrics": {
+            "precision": 0.74526,
+            "recall": 0.76602,
+            "fbeta": 0.75549
+        }
+    },
+    {
+        "feature": "occupation",
+        "value": "Adm-clerical",
+        "metrics": {
+            "precision": 0.57831,
+            "recall": 0.54545,
+            "fbeta": 0.5614
+        }
+    },
+    {
+        "feature": "occupation",
+        "value": "?",
+        "metrics": {
+            "precision": 0.80952,
+            "recall": 0.47222,
+            "fbeta": 0.59649
+        }
+    },
+    {
+        "feature": "occupation",
+        "value": "Machine-op-inspct",
+        "metrics": {
+            "precision": 0.60606,
+            "recall": 0.44444,
+            "fbeta": 0.51282
+        }
+    },
+    {
+        "feature": "occupation",
+        "value": "Transport-moving",
+        "metrics": {
+            "precision": 0.48837,
+            "recall": 0.42857,
+            "fbeta": 0.45652
+        }
+    },
+    {
+        "feature": "occupation",
+        "value": "Farming-fishing",
+        "metrics": {
+            "precision": 0.71429,
+            "recall": 0.34483,
+            "fbeta": 0.46512
+        }
+    },
+    {
+        "feature": "occupation",
+        "value": "Protective-serv",
+        "metrics": {
+            "precision": 0.76316,
+            "recall": 0.56863,
+            "fbeta": 0.65169
         }
     },
     {
         "feature": "occupation",
         "value": "Handlers-cleaners",
         "metrics": {
-            "precision": 0.5,
-            "recall": 0.21429,
-            "fbeta": 0.3
+            "precision": 0.66667,
+            "recall": 0.11765,
+            "fbeta": 0.2
         }
     },
     {
@@ -424,28 +424,28 @@
     },
     {
         "feature": "relationship",
-        "value": "Not-in-family",
+        "value": "Husband",
         "metrics": {
-            "precision": 0.97561,
-            "recall": 0.28169,
-            "fbeta": 0.43716
+            "precision": 0.7282,
+            "recall": 0.66189,
+            "fbeta": 0.69346
         }
     },
     {
         "feature": "relationship",
-        "value": "Husband",
+        "value": "Not-in-family",
         "metrics": {
-            "precision": 0.7623,
-            "recall": 0.56244,
-            "fbeta": 0.6473
+            "precision": 0.75,
+            "recall": 0.36538,
+            "fbeta": 0.49138
         }
     },
     {
         "feature": "relationship",
         "value": "Own-child",
         "metrics": {
-            "precision": 1.0,
-            "recall": 0.3,
+            "precision": 0.75,
+            "recall": 0.33333,
             "fbeta": 0.46154
         }
     },
@@ -453,9 +453,9 @@
         "feature": "relationship",
         "value": "Unmarried",
         "metrics": {
-            "precision": 1.0,
-            "recall": 0.21277,
-            "fbeta": 0.35088
+            "precision": 0.83333,
+            "recall": 0.2439,
+            "fbeta": 0.37736
         }
     },
     {
@@ -463,89 +463,125 @@
         "value": "Other-relative",
         "metrics": {
             "precision": 1.0,
-            "recall": 0.16667,
-            "fbeta": 0.28571
+            "recall": 0.28571,
+            "fbeta": 0.44444
         }
     },
     {
         "feature": "relationship",
         "value": "Wife",
         "metrics": {
-            "precision": 0.87273,
-            "recall": 0.60759,
-            "fbeta": 0.71642
-        }
-    },
-    {
-        "feature": "race",
-        "value": "Black",
-        "metrics": {
-            "precision": 0.78723,
-            "recall": 0.48052,
-            "fbeta": 0.59677
+            "precision": 0.70423,
+            "recall": 0.72993,
+            "fbeta": 0.71685
         }
     },
     {
         "feature": "race",
         "value": "White",
         "metrics": {
-            "precision": 0.79615,
-            "recall": 0.52229,
-            "fbeta": 0.63078
+            "precision": 0.73228,
+            "recall": 0.6227,
+            "fbeta": 0.67305
         }
     },
     {
         "feature": "race",
-        "value": "Amer-Indian-Eskimo",
+        "value": "Black",
         "metrics": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "fbeta": 0.66667
+            "precision": 0.68852,
+            "recall": 0.6087,
+            "fbeta": 0.64615
         }
     },
     {
         "feature": "race",
         "value": "Asian-Pac-Islander",
         "metrics": {
-            "precision": 0.60345,
-            "recall": 0.66038,
-            "fbeta": 0.63063
+            "precision": 0.69565,
+            "recall": 0.59259,
+            "fbeta": 0.64
         }
     },
     {
         "feature": "race",
         "value": "Other",
         "metrics": {
-            "precision": 1.0,
-            "recall": 0.75,
+            "precision": 0.75,
+            "recall": 1.0,
             "fbeta": 0.85714
         }
     },
     {
-        "feature": "sex",
-        "value": "Female",
+        "feature": "race",
+        "value": "Amer-Indian-Eskimo",
         "metrics": {
-            "precision": 0.88333,
-            "recall": 0.47748,
-            "fbeta": 0.61988
+            "precision": 0.66667,
+            "recall": 0.57143,
+            "fbeta": 0.61538
         }
     },
     {
         "feature": "sex",
         "value": "Male",
         "metrics": {
-            "precision": 0.77335,
-            "recall": 0.53465,
-            "fbeta": 0.63222
+            "precision": 0.7303,
+            "recall": 0.6266,
+            "fbeta": 0.67448
+        }
+    },
+    {
+        "feature": "sex",
+        "value": "Female",
+        "metrics": {
+            "precision": 0.71839,
+            "recall": 0.58962,
+            "fbeta": 0.64767
         }
     },
     {
         "feature": "native-country",
         "value": "United-States",
         "metrics": {
-            "precision": 0.79638,
-            "recall": 0.515,
-            "fbeta": 0.6255
+            "precision": 0.73009,
+            "recall": 0.61555,
+            "fbeta": 0.66794
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "?",
+        "metrics": {
+            "precision": 0.76316,
+            "recall": 0.85294,
+            "fbeta": 0.80556
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Poland",
+        "metrics": {
+            "precision": 0.33333,
+            "recall": 0.5,
+            "fbeta": 0.4
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "England",
+        "metrics": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "fbeta": 0.5
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Italy",
+        "metrics": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "fbeta": 0.66667
         }
     },
     {
@@ -559,29 +595,92 @@
     },
     {
         "feature": "native-country",
+        "value": "South",
+        "metrics": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "fbeta": 0.88889
+        }
+    },
+    {
+        "feature": "native-country",
         "value": "Mexico",
         "metrics": {
             "precision": 1.0,
-            "recall": 0.375,
-            "fbeta": 0.54545
+            "recall": 0.6,
+            "fbeta": 0.75
         }
     },
     {
         "feature": "native-country",
-        "value": "Columbia",
+        "value": "Philippines",
         "metrics": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "fbeta": 0.66667
+            "precision": 0.8,
+            "recall": 0.61538,
+            "fbeta": 0.69565
         }
     },
     {
         "feature": "native-country",
-        "value": "Poland",
+        "value": "Trinadad&Tobago",
+        "metrics": {
+            "precision": 0.0,
+            "recall": 1.0,
+            "fbeta": 0.0
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Haiti",
         "metrics": {
             "precision": 1.0,
+            "recall": 1.0,
+            "fbeta": 1.0
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "China",
+        "metrics": {
+            "precision": 0.5,
             "recall": 0.5,
-            "fbeta": 0.66667
+            "fbeta": 0.5
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Germany",
+        "metrics": {
+            "precision": 0.71429,
+            "recall": 0.5,
+            "fbeta": 0.58824
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "India",
+        "metrics": {
+            "precision": 0.5,
+            "recall": 0.71429,
+            "fbeta": 0.58824
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Canada",
+        "metrics": {
+            "precision": 0.71429,
+            "recall": 0.90909,
+            "fbeta": 0.8
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Jamaica",
+        "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "fbeta": 1.0
         }
     },
     {
@@ -595,92 +694,20 @@
     },
     {
         "feature": "native-country",
-        "value": "Trinadad&Tobago",
+        "value": "Thailand",
         "metrics": {
             "precision": 1.0,
             "recall": 1.0,
             "fbeta": 1.0
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Honduras",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "fbeta": 1.0
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "India",
-        "metrics": {
-            "precision": 0.5,
-            "recall": 0.83333,
-            "fbeta": 0.625
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Haiti",
-        "metrics": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "fbeta": 0.0
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Vietnam",
-        "metrics": {
-            "precision": 0.5,
-            "recall": 1.0,
-            "fbeta": 0.66667
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "China",
-        "metrics": {
-            "precision": 0.85714,
-            "recall": 0.85714,
-            "fbeta": 0.85714
         }
     },
     {
         "feature": "native-country",
         "value": "Ecuador",
         "metrics": {
-            "precision": 0.0,
-            "recall": 0.0,
-            "fbeta": 0.0
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Philippines",
-        "metrics": {
-            "precision": 0.55556,
-            "recall": 0.55556,
-            "fbeta": 0.55556
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Nicaragua",
-        "metrics": {
             "precision": 1.0,
-            "recall": 0.0,
-            "fbeta": 0.0
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Cambodia",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "fbeta": 0.66667
+            "recall": 1.0,
+            "fbeta": 1.0
         }
     },
     {
@@ -694,61 +721,25 @@
     },
     {
         "feature": "native-country",
-        "value": "Germany",
+        "value": "Guatemala",
         "metrics": {
-            "precision": 0.66667,
-            "recall": 0.2,
-            "fbeta": 0.30769
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Jamaica",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 0.5,
-            "fbeta": 0.66667
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "South",
-        "metrics": {
-            "precision": 0.2,
+            "precision": 0.0,
             "recall": 1.0,
-            "fbeta": 0.33333
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Iran",
-        "metrics": {
-            "precision": 0.6,
-            "recall": 1.0,
-            "fbeta": 0.75
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "?",
-        "metrics": {
-            "precision": 0.75,
-            "recall": 0.68182,
-            "fbeta": 0.71429
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Dominican-Republic",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "fbeta": 1.0
+            "fbeta": 0.0
         }
     },
     {
         "feature": "native-country",
         "value": "Japan",
+        "metrics": {
+            "precision": 0.0,
+            "recall": 1.0,
+            "fbeta": 0.0
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Columbia",
         "metrics": {
             "precision": 1.0,
             "recall": 1.0,
@@ -759,33 +750,6 @@
         "feature": "native-country",
         "value": "Taiwan",
         "metrics": {
-            "precision": 0.625,
-            "recall": 0.83333,
-            "fbeta": 0.71429
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Italy",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 0.71429,
-            "fbeta": 0.83333
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Yugoslavia",
-        "metrics": {
-            "precision": 0.5,
-            "recall": 1.0,
-            "fbeta": 0.66667
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Ireland",
-        "metrics": {
             "precision": 1.0,
             "recall": 1.0,
             "fbeta": 1.0
@@ -793,19 +757,10 @@
     },
     {
         "feature": "native-country",
-        "value": "Greece",
+        "value": "Cuba",
         "metrics": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "fbeta": 1.0
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Canada",
-        "metrics": {
-            "precision": 0.4,
-            "recall": 1.0,
+            "precision": 0.66667,
+            "recall": 0.5,
             "fbeta": 0.57143
         }
     },
@@ -813,23 +768,14 @@
         "feature": "native-country",
         "value": "France",
         "metrics": {
-            "precision": 1.0,
+            "precision": 0.5,
             "recall": 0.5,
-            "fbeta": 0.66667
+            "fbeta": 0.5
         }
     },
     {
         "feature": "native-country",
         "value": "Laos",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 1.0,
-            "fbeta": 1.0
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Guatemala",
         "metrics": {
             "precision": 1.0,
             "recall": 0.0,
@@ -838,16 +784,7 @@
     },
     {
         "feature": "native-country",
-        "value": "Cuba",
-        "metrics": {
-            "precision": 1.0,
-            "recall": 0.66667,
-            "fbeta": 0.8
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Scotland",
+        "value": "Vietnam",
         "metrics": {
             "precision": 1.0,
             "recall": 1.0,
@@ -856,25 +793,16 @@
     },
     {
         "feature": "native-country",
-        "value": "England",
-        "metrics": {
-            "precision": 0.83333,
-            "recall": 0.71429,
-            "fbeta": 0.76923
-        }
-    },
-    {
-        "feature": "native-country",
-        "value": "Outlying-US(Guam-USVI-etc)",
+        "value": "Iran",
         "metrics": {
             "precision": 1.0,
-            "recall": 1.0,
-            "fbeta": 1.0
+            "recall": 0.75,
+            "fbeta": 0.85714
         }
     },
     {
         "feature": "native-country",
-        "value": "Thailand",
+        "value": "Yugoslavia",
         "metrics": {
             "precision": 1.0,
             "recall": 0.5,
@@ -892,7 +820,7 @@
     },
     {
         "feature": "native-country",
-        "value": "Hong",
+        "value": "Hungary",
         "metrics": {
             "precision": 1.0,
             "recall": 1.0,
@@ -901,11 +829,74 @@
     },
     {
         "feature": "native-country",
-        "value": "Hungary",
+        "value": "Nicaragua",
+        "metrics": {
+            "precision": 0.0,
+            "recall": 1.0,
+            "fbeta": 0.0
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Greece",
+        "metrics": {
+            "precision": 0.5,
+            "recall": 0.5,
+            "fbeta": 0.5
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Cambodia",
+        "metrics": {
+            "precision": 1.0,
+            "recall": 0.25,
+            "fbeta": 0.4
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Dominican-Republic",
         "metrics": {
             "precision": 1.0,
             "recall": 1.0,
             "fbeta": 1.0
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Honduras",
+        "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "fbeta": 1.0
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Ireland",
+        "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "fbeta": 1.0
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Scotland",
+        "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "fbeta": 1.0
+        }
+    },
+    {
+        "feature": "native-country",
+        "value": "Hong",
+        "metrics": {
+            "precision": 1.0,
+            "recall": 0.0,
+            "fbeta": 0.0
         }
     }
 ]
