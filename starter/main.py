@@ -47,7 +47,7 @@ class Payload(BaseModel):
 
 
 def _load_artifacts():
-    BASE_PATH = "starter/model"
+    BASE_PATH = "../starter/model"
     clf = joblib.load(f"{BASE_PATH}/rfc_model.pkl")
     encoder = joblib.load(f"{BASE_PATH}/encoder.pkl")
 

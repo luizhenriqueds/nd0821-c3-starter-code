@@ -1,8 +1,6 @@
 import json
 import os
 
-import pytest
-import requests
 from fastapi.testclient import TestClient
 
 from starter.main import app
@@ -13,10 +11,6 @@ PREDICT_ENDPOINT = "http://127.0.0.1:8000/predict"
 ENV = os.getenv("ENV")
 
 
-@pytest.mark.skipif(
-    ENV == 'prod',
-    reason="API not running, mock needed"
-)
 def test_greeting():
     """Test / endpoint with GET method"""
     r = client.get("/")
@@ -27,10 +21,6 @@ def test_greeting():
     assert r.status_code == 200
 
 
-@pytest.mark.skipif(
-    ENV == 'prod',
-    reason="API not running, mock needed"
-)
 def test_negative_pred():
     """Test /predict endpoint with POST method for negative prediction"""
     sample_payload = {
@@ -50,27 +40,17 @@ def test_negative_pred():
         "native-country": "United-States"
     }
 
-    headers = {
-        'content-type': "application/json",
-        'cache-control': "no-cache"
-    }
-
-    response = requests.request(
-        "POST",
+    response = client.post(
         PREDICT_ENDPOINT,
-        data=json.dumps(sample_payload),
-        headers=headers
+        data=json.dumps(sample_payload)
     )
-    prediction = json.loads(response.text)["prediction"]
+
+    prediction = response.json()["prediction"]
 
     assert response.status_code == 200
     assert prediction == "<= 50k/yr"
 
 
-@pytest.mark.skipif(
-    ENV == 'prod',
-    reason="API not running, mock needed"
-)
 def test_positive_pred():
     """Test /predict endpoint with POST method for positive prediction"""
     sample_payload = {
@@ -90,17 +70,11 @@ def test_positive_pred():
         "native-country": "United-States"
     }
 
-    headers = {
-        'content-type': "application/json",
-        'cache-control': "no-cache"
-    }
-
-    response = requests.request(
-        "POST",
+    response = client.post(
         PREDICT_ENDPOINT,
-        data=json.dumps(sample_payload),
-        headers=headers
+        data=json.dumps(sample_payload)
     )
+
     prediction = json.loads(response.text)["prediction"]
 
     assert response.status_code == 200
