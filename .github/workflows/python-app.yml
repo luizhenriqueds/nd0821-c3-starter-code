@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: [ master ]
 
+env:
+  ENV: prod
+
 permissions:
   id-token: write
   contents: read
