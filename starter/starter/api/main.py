@@ -1,6 +1,5 @@
 import http
 import json
-from pathlib import Path
 
 import joblib
 import numpy as np
@@ -36,9 +35,9 @@ class Payload(BaseModel):
 
 
 def _load_artifacts():
-    PATH_TO_MODELS_DIR = Path('../')
-    clf = joblib.load(PATH_TO_MODELS_DIR / 'model/rfc_model.pkl')
-    encoder = joblib.load(PATH_TO_MODELS_DIR / 'model/encoder.pkl')
+    BASE_PATH = "starter/model"
+    clf = joblib.load(f"{BASE_PATH}/rfc_model.pkl")
+    encoder = joblib.load(f"{BASE_PATH}/encoder.pkl")
 
     return clf, encoder
 
