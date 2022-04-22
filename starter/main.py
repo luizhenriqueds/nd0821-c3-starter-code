@@ -13,7 +13,10 @@ from fastapi.encoders import jsonable_encoder
 from pydantic import BaseModel, Field
 
 if "DYNO" in os.environ and os.path.isdir(".dvc"):
+    remote = os.getenv("REMOTE")
+    url = os.getenv("URL")
     os.system("dvc config core.no_scm true")
+    os.system(f"dvc remote add -d {remote} {url}")
     if os.system("dvc pull") != 0:
         exit("dvc pull failed")
     os.system("rm -r .dvc .apt/usr/lib/dvc")
