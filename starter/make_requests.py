@@ -2,7 +2,7 @@ import json
 
 import requests
 
-LIVE_ENDPOINT = "http://127.0.0.1:8000/predict"
+LIVE_ENDPOINT = "https://udacity-ml-project.herokuapp.com/predict"
 
 
 def make_post_request():
