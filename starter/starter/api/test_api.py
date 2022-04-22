@@ -1,5 +1,7 @@
 import json
+import os
 
+import pytest
 import requests
 from fastapi.testclient import TestClient
 
@@ -8,8 +10,13 @@ from ..api.main import app
 client = TestClient(app)
 
 PREDICT_ENDPOINT = "http://127.0.0.1:8000/predict"
+ENV = os.getenv("ENV")
 
 
+@pytest.mark.skipif(
+    ENV == 'prod',
+    reason="API not running, mock needed"
+)
 def test_greeting():
     """Test / endpoint with GET method"""
     r = client.get("/")
@@ -20,6 +27,10 @@ def test_greeting():
     assert r.status_code == 200
 
 
+@pytest.mark.skipif(
+    ENV == 'prod',
+    reason="API not running, mock needed"
+)
 def test_negative_pred():
     """Test /predict endpoint with POST method for negative prediction"""
     sample_payload = {
@@ -56,6 +67,10 @@ def test_negative_pred():
     assert prediction == "<= 50k/yr"
 
 
+@pytest.mark.skipif(
+    ENV == 'prod',
+    reason="API not running, mock needed"
+)
 def test_positive_pred():
     """Test /predict endpoint with POST method for positive prediction"""
     sample_payload = {
