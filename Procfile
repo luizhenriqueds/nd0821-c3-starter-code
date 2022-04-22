@@ -1,0 +1,1 @@
+web: uvicorn starter.starter.api.main:app
